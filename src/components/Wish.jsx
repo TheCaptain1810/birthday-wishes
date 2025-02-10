@@ -9,7 +9,7 @@ const Wish = ({ opened }) => {
   const soniyaBirthday = new Date(`${currentYear}-02-19`);
   const currentDate = new Date();
   const timeDifference = soniyaBirthday - currentDate;
-  const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+  const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24)) + 1;
 
   useEffect(() => {
     if (opened) {
